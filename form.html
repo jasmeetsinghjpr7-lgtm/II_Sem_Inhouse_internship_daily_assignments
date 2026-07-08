@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            background-color: rgb(0, 255, 247);
+        }
+        .form-container {
+            width: 420px;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+            padding: 18px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+        .form-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #bbb;
+            transition: all 0.3s ease;
+            background-color: #e8f4f8;
+        }
+        input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="date"]:hover, input[type="password"]:hover, select:hover {
+            border-color: #4CAF50;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+            transform: translateY(-2px);
+        }
+        input[type="submit"] {
+            padding: 10px 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center"><strong><i>Registration form</i></strong></h2>
+    <div class="form-container">
+    <form>
+        <label>Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label>Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+        <label>Gender:</label>
+        <select id="Gender" name="Gender" >
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB" placeholder="Enter your date of birth"><br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label>Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br> 
+        <align="center"> 
+        <input type="submit" value="Register">
+        </align>
+        </form>
+        </div>
+    </body>
+    </html>
